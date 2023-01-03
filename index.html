@@ -24,7 +24,18 @@
         max-width: 1080px;
       }
 
-      #lock-body {
+      #lock-stroke {
+        stroke-dasharray: 462.8340148925781;
+        stroke-dashoffset: 462.8340148925781;
+      }
+
+      #key-place {
+        transform-box: fill-box;
+        transform-origin: center;
+        transform: scale(0);
+      }
+
+      #main-logo:hover #lock-body {
         transform-box: fill-box;
         transform-origin: center;
         transform: translate(0px, -50%);
@@ -40,7 +51,7 @@
         }
       }
 
-      #lock-stroke {
+      #main-logo:hover #lock-stroke {
         stroke-dasharray: 462.8340148925781;
         stroke-dashoffset: 462.8340148925781;
         transform-box: fill-box;
@@ -78,7 +89,7 @@
         }
       }
 
-      #secured-text {
+      #main-logo:hover #secured-text {
         transform-box: fill-box;
         transform-origin: center;
         transform: translate(-50%, 0%);
@@ -100,7 +111,7 @@
         }
       }
 
-      #lock-t {
+      #main-logo:hover #lock-t {
         transform-box: fill-box;
         transform-origin: center;
         transform: scale(0);
@@ -119,7 +130,7 @@
         }
       }
 
-      #turing-text {
+      #main-logo:hover #turing-text {
         transform-box: fill-box;
         transform-origin: center;
         transform: translateX(-50%);
@@ -141,7 +152,7 @@
         }
       }
 
-      #key-place {
+      #main-logo:hover #key-place {
         transform-box: fill-box;
         transform-origin: center;
         transform: scale(1);
@@ -160,8 +171,8 @@
         }
       }
 
-      #domain_name,
-      #expire_date {
+      #main-logo:hover #domain_name,
+      #main-logo:hover #expire_date {
         transform-box: fill-box;
         transform-origin: center;
         opacity: 0;
@@ -180,7 +191,7 @@
         }
       }
 
-      #outer-stroke {
+      #main-logo:hover #outer-stroke {
         stroke-dasharray: 4562.095703125;
         stroke-dashoffset: 4562.095703125;
         animation: stroke__in 4s linear infinite;
@@ -203,6 +214,7 @@
     <div class="parentDiv">
       <div class="wrapper">
         <svg
+          id="main-logo"
           width="100%"
           min-height="0"
           viewBox="0 0 1860 720"
