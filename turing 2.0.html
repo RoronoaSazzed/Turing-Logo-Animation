@@ -31,11 +31,11 @@
         transform-origin: center;
         transform: translateY(40%);
         transition: all 0.5s;
-        transition-delay: 0.75s;
       }
 
       #logo:hover #site-url,
       #logo:hover #brand-name {
+        transition-delay: 0.75s;
         opacity: 1;
         transform: translateY(0px);
       }
@@ -76,11 +76,11 @@
         transform-origin: center;
         transform: scaleX(0);
         transition: all 0.5s;
-        transition-delay: 0.75s;
         transition-timing-function: ease-in-out;
       }
 
       #logo:hover #divider-line {
+        transition-delay: 0.75s;
         transform: scaleX(1);
       }
 
@@ -95,11 +95,12 @@
         transform-origin: 50px center;
         transform: scaleX(0);
         transition: all 1s;
-        transition-delay: 0.2s;
+
         transition-timing-function: ease-in-out;
       }
 
       #logo:hover #top-layer {
+        transition-delay: 0.2s;
         transform: scaleX(1);
       }
 
@@ -194,8 +195,8 @@
       <div class="wrapper">
         <svg
           id="logo"
-          width="379"
-          height="167"
+          width="100%"
+          min-height="0"
           viewBox="0 0 379 167"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
