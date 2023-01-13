@@ -24,41 +24,112 @@
         max-width: 1080px;
       }
 
+      #lock {
+        transform-origin: center;
+        transform-box: fill-box;
+        transform: translateY(-10px);
+      }
+
+      #logo:hover #lock {
+        animation: lock 1s forwards;
+      }
+
+      @keyframes lock {
+        0% {
+          transform: translateY(-10px);
+        }
+
+        50% {
+          transform: translateY(0px);
+        }
+
+        100% {
+          transform: translateY(-10px);
+        }
+      }
+
       #lock-stroke {
         transform-box: fill-box;
         transform-origin: center;
-        transform: translateY(0px);
-        transition: all 0.75s;
+        /* transform: translateY(0px); */
+        /* transition: all 0.75s; */
+        transform: translateY(30px) scale(0.9);
       }
 
       #logo:hover #lock-stroke {
-        transform: translateY(30px) scale(0.9);
+        animation: lock__stroke 1s forwards;
+        /* transform: translateY(30px) scale(0.9); */
+      }
+
+      @keyframes lock__stroke {
+        0% {
+          transform: translateY(30px) scale(0.9);
+        }
+
+        50% {
+          transform: translateY(0px) scale(1);
+        }
+
+        100% {
+          transform: translateY(30px) scale(0.9);
+        }
       }
 
       #key-place {
         transform-box: fill-box;
         transform-origin: center;
-        transform: scale(1);
+        /* transform: scale(1); */
+        transform: scale(0);
         transition: all 0.5s;
       }
 
       #logo:hover #key-place {
-        transition-delay: 0.25s;
-        transform: scale(0);
+        /* transition-delay: 0.25s;
+        transform: scale(0); */
+        animation: key__place 1s forwards;
+      }
+
+      @keyframes key__place {
+        0% {
+          transform: scale(0);
+        }
+
+        50% {
+          transform: scale(1);
+        }
+
+        100% {
+          transform: scale(0);
+        }
       }
 
       #lock-t {
         transform-box: fill-box;
         transform-origin: center;
-        transform: scale(0);
+        transform: scale(1);
         transition: all 0.5s;
       }
 
       #logo:hover #lock-t {
-        transform-box: fill-box;
+        /* transform-box: fill-box;
         transform-origin: center;
         transition-delay: 0.5s;
-        transform: scale(1);
+        transform: scale(1); */
+        animation: site__t 1s forwards;
+      }
+
+      @keyframes site__t {
+        0% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(0);
+        }
+
+        100% {
+          transform: scale(1);
+        }
       }
 
       #site-url,
